@@ -54,6 +54,9 @@ header .em {
     font-size: 1em;
     font-weight: bold;
 }
+.comment-input span:hover {
+	cursor: pointer;
+}
 .comments {
     margin-top: 20px;
     width: 612px;
