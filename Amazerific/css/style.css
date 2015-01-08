@@ -15,7 +15,7 @@ hr.woohoo{
 }
 header, main {
     margin: 0 auto;
-    width: 855px;
+    width: 800px;
     display: flex;
     justify-content: space-between;
 }
@@ -45,7 +45,7 @@ footer {
 }
 footer > section {
     margin: auto;
-    width: 855px;
+    width: 800px;
     justify-content: space-between;
     padding-bottom: 15px;
 }
