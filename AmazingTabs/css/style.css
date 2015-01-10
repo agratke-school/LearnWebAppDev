@@ -47,6 +47,9 @@ main a {
     background: #ddd;
     padding: 5px;
 }
+.tabs a span.active {
+    background: #eee;
+}
 footer {
     background: #F4EC37;
 }
