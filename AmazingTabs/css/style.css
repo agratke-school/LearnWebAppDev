@@ -38,7 +38,7 @@ main a {
     color: #F40022;
     text-decoration: none;
 }
-.tabs a span{
+.tabs a span {
     display: inline-block;
     border-radius: 5px 5px 0 0;
     width: 100px;
@@ -49,6 +49,12 @@ main a {
 }
 .tabs a span.active {
     background: #eee;
+}
+.content ul {
+    background: #eee;
+    margin-top: 0px;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 footer {
     background: #F4EC37;
