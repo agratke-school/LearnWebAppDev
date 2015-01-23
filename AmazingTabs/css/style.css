@@ -79,6 +79,7 @@ footer .contact {
 footer .sitemap {
     width: 200px;
     float: right;
+    display: inline-block;
 }
 footer h5 {} footer ul {
     padding: 0;
@@ -92,6 +93,6 @@ footer a:link {
     color: #F40022;
     text-decoration: none;
 }
-footer #double {
+footer #double li {
     width: 50%;
 }
