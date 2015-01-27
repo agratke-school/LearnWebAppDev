@@ -6,20 +6,23 @@
 .site-content {
     flex: 1;
 }
-hr.woohoo {
+/*woohoo is the css code for a hr line that fades out at the edges... pretty
+ * cool!!!*/
+.woohoo {
     width: 100%;
     border: 0;
     height: 1px;
     background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
     background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
-header, main {
+header,
+main {
     margin: 0 auto;
     width: 800px;
     display: flex;
     justify-content: space-between;
 }
-header h1 {
+h1 {
     color: #B32A39;
     font-style: italic;
 }
@@ -47,12 +50,12 @@ main a {
     background: #ddd;
     padding: 5px;
 }
-.tabs a span.active {
+.tabs a .active {
     background: #eee;
 }
 .content ul {
     background: #eee;
-    margin-top: 0px;
+    margin-top: 0;
     padding-top: 1em;
     padding-bottom: 1em;
 }
@@ -81,7 +84,7 @@ footer .sitemap {
     float: right;
     display: inline-block;
 }
-footer h5 {} footer ul {
+footer ul {
     padding: 0;
 }
 footer li {

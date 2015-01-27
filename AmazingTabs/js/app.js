@@ -1,28 +1,25 @@
-var main = function () {
-	"use strict";
-    var makeTabActive = function(tabNumber){
-     var tabSelector = ".tabs a:nth-child(" + tabNumber + ") span";
-     $(".tabs span").removeClass("active");
-        $(tabSelector).addClass("active");
+var main = function() {
+    "use strict";
+
+    function tabLet() {
+        var $element = $(element);
+
+        $(".tabs span").removeClass("active");
+        $element.addClass("active");
+        $("main .content").empty();
+
+        if ($element.parent().is(":nth-child(1)")) {
+            console.log("First Tab Clicked!");
+        } else if ($element.parent().is(":nth-child(2)")) {
+            console.log("Second Tab Clicked!");
+        } else if ($element.parent().is(":nth-child(3)")) {
+            console.log("Third Tab Clicked!");
+        }
+
+        return false;
     }
-
-    $(".tabs a:nth-child(1)).on("click", function () {
-       makeTabActive(1); 
-        return false;
-        
+    $(".tabs span").toArray().forEach(function(element) {
+        $(element).on("click", tabLet());
     });
-
-    $("tabs a:nth-child(2).on("click", function () {
-       makeTabActive(2); 
-        return false;
-        }
-
-    $("tabs a:nth-child(3).on("click", function () {
-       makeTabActive(3); 
-        return false;
-        }
-        
-        
 };
-
 $(document).ready(main);
